@@ -15,7 +15,9 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-  <link rel="icon" type="image/x-icon" href="./360_F_439699128_ZyqNgbFjYY4E0qySuOSATHqxn0I6Yuox.jpg">
+  <link rel="icon" type="image/x-icon" href="./images/360_F_439699128_ZyqNgbFjYY4E0qySuOSATHqxn0I6Yuox.jpg">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="./portfolio-web-1.css">
 </head>
@@ -70,15 +72,18 @@
 
     <div class="container">
 
-      <div class="row">
+      <div class="row overflow-x-hidden">
 
         <!-- <div class="col-lg-2 col-sm-0"></div> -->
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-up"
+        data-aos-duration="1500">
           <img class="img-fluid pro-" src="./images/IMG_4152-1.jpg" alt="">
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
 
           <p class="h1">About Me</p>
 
@@ -169,7 +174,7 @@
     </div>
 
   </section>
-
+<!-- 
 
   <section class="sec-3">
 
@@ -200,15 +205,18 @@
 
     </div>
 
-  </section>
+  </section> -->
 
-  <section id="resume">
+  <section id="resume" class="mt-5">
 
     <div class="container">
 
-      <div class="row">
+      <div class="row overflow-x-hidden">
 
-        <div class="col-lg-6">
+        <div class="col-md-6"  data-aos="fade-right"
+        data-aos-offset="500"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1500">
 
           <p class="hh2">Education</p>
 
@@ -265,7 +273,10 @@
 
 
 
-        <div class="col-lg-6">
+        <div class="col-md-6" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="1500">
 
           <p class="hh2">Experience</p>
 
@@ -353,14 +364,14 @@
 
       </div>
 
-      <div class="row">
+      <div class="row overflow-x-hidden">
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
           <a href="https://ai-land-test.web.app"><img src="./images/Screenshot 2023-12-15 155523.png" class="img-fluid"
               alt=""></a>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="1500">
           <a href="https://urban-real-estate-test.web.app/"><img src="./images/Screenshot 2023-12-15 162601.png"
               class="img-fluid" alt=""></a>
         </div>
@@ -467,15 +478,17 @@
 
 
 
-      <div class="row">
+      <div class="row overflow-x-hidden">
 
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
           <div class="bg-imgs img-fluid mb-3"></div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 frm-bg-clr" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
 
-          <form class="frm-bg-clr">
+          <!-- <form class="frm-bg-clr">
 
             <input class="width mt-5" type="text" placeholder="  Your Name"> <br> <br>
 
@@ -487,7 +500,23 @@
 
             <button class="btns mb-5">SEND MESSAGE</button>
 
-          </form>
+          </form> -->
+
+
+          <div class="mb-3">
+            <input type="text" class="form-control p-3" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control p-3" id="exampleFormControlInput1" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control p-3" placeholder="Subject">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+          </div> <br>
+
+          <button class="btns mb-5">SEND MESSAGE</button>
 
         </div>
 
@@ -532,7 +561,11 @@
 
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+    AOS.init();
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
